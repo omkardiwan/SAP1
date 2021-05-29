@@ -1,0 +1,47 @@
+<mvc:View
+    controllerName="ui.firstapp.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+                <Panel expandable="true" headerText="Sign Up and Login Page " >
+			<Label text="Username" labelFor="nameInput" />
+		    <Input
+			id="nameInput"
+			class="sapUiSmallMarginBottom"
+			placeholder="Enter name"
+		
+			/>
+            	<Label text="Password" labelFor="passwordInput" />
+		<Input
+			id="passwordInput"
+			type="Password"
+			placeholder="Enter password"    
+         />
+                    <Button 
+                    id = "loginButton"
+                    type="Emphasized"
+                    icon="sap-icon://sap-ui5"
+                    text=" Login"
+                    press="onLogin"
+                    class="sapUiSmallMargin" />
+
+                    <Button 
+                    id = "signUpButton"
+                    type="Emphasized"
+                    icon="sap-icon://sap-ui5"
+                    text=" Sign Up"
+                    press="onSignUp"
+                    class="sapUiSmallMargin" />
+
+                    </Panel>
+    
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
